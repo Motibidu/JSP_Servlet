@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item key="hasShownOverlayPopupBefore" value="true"/>
+	<section name="java.lang.Class">
+		<item key="selection" value="response.addHeader(&quot;myName&quot;, add_str);"/>
+		<list key="findhistory">
+			<item value="myName"/>
+			<item value="response.addHeader(&quot;myName&quot;, add_str);"/>
+			<item value="port"/>
+		</list>
+	</section>
+</section>
