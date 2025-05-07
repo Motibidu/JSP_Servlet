@@ -2,8 +2,9 @@
 <section name="Workbench">
 	<item key="hasShownOverlayPopupBefore" value="true"/>
 	<section name="java.lang.Class">
-		<item key="selection" value="response.addHeader(&quot;myName&quot;, add_str);"/>
+		<item key="selection" value="&lt;h2&gt;include된 파일에서 page 영역 읽어오기&lt;/h2&gt;"/>
 		<list key="findhistory">
+			<item value="&lt;h2&gt;include된 파일에서 page 영역 읽어오기&lt;/h2&gt;"/>
 			<item value="myName"/>
 			<item value="response.addHeader(&quot;myName&quot;, add_str);"/>
 			<item value="port"/>
