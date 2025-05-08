@@ -1,0 +1,13 @@
+package membership;
+
+import common.JDBConnect;
+
+public class MemberDAO extends JDBConnect
+{
+
+	public MemberDAO(String driver, String url, String id, String pwd)
+	{
+		super(driver, url, id, pwd);
+	}
+	
+}

@@ -1,0 +1,27 @@
+package membership;
+
+import common.JDBConnect;
+import jakarta.servlet.ServletContext;
+
+public class MemberDAO extends JDBConnect
+{
+
+	public MemberDAO(String driver, String url, String id, String pwd)
+	{
+		super(driver, url, id, pwd);
+	}
+
+	public MemberDAO(ServletContext application)
+	{
+		super(application);
+	}
+	
+	public MemberDTO getMemberDTO(String uid, String upass)
+	{
+		
+		
+	}
+	
+	
+	
+}

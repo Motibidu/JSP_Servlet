@@ -1,0 +1,13 @@
+package common;
+
+import java.sql.ResultSet;
+
+public class JDBConnect
+{
+	public Coneection con;
+	public Statement stmt;
+	public PreparedStatement pstm;
+	public ResultSet rs;
+	
+	
+}
