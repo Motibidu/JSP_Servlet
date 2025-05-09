@@ -5,6 +5,10 @@
 		<item key="selection" value="&lt;h2&gt;include된 파일에서 page 영역 읽어오기&lt;/h2&gt;"/>
 		<item key="replaceBarOpen" value="false"/>
 		<list key="findhistory">
+			<item value="수정에 실패"/>
+			<item value="수정하기"/>
+			<item value="replace"/>
+			<item value="getContent"/>
 			<item value="&lt;h2&gt;include된 파일에서 page 영역 읽어오기&lt;/h2&gt;"/>
 			<item value="myName"/>
 			<item value="response.addHeader(&quot;myName&quot;, add_str);"/>

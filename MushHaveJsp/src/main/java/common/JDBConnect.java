@@ -51,7 +51,7 @@ public class JDBConnect
 		try
 		{
 			String driver = application.getInitParameter("OracleDriver");
-
+			Class.forName(driver);
 			String url = application.getInitParameter("OracleURL");
 			String id = application.getInitParameter("OracleId");
 			String pwd = application.getInitParameter("OraclePwd");

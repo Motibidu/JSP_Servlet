@@ -26,3 +26,14 @@ insert into member (id, pass, name) values ('test', '1234', '테스트');
 
 ALTER USER musthave QUOTA 5m ON users;
 
+SELECT * FROM member;
+
+SELECT id, pass, rownum FROM member;
+
+SELECT * FROM (
+    SELECT Tb.*, rownum AS rNum FROM (
+        SELECT * FROM board ORDER BY num DESC
+    ) Tb
+)
+ WHERE rNum 
+ BETWEEN 1 AND 10;
