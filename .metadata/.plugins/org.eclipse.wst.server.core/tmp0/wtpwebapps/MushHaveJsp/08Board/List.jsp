@@ -19,6 +19,10 @@ if (searchWord != null)
 }
 
 int totalCount = dao.selectCount(param);
+
+
+
+
 List<BoardDTO> boardLists = dao.selectList(param);
 dao.close();
 %>

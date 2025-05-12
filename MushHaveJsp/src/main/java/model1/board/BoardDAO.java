@@ -210,7 +210,7 @@ public class BoardDAO extends JDBConnect
 						+ " 		SELECT * FROM board ";
 		if (map.get("searchWord") != null)
 		{
-			query += " WHERE " + map.get("searchField") + " "
+			query += " WHERE " + map.get("searchField")
 					+" LIKE '%" + map.get("searchWord") + "%' ";
 		}
 
@@ -225,7 +225,7 @@ public class BoardDAO extends JDBConnect
 			psmt.setString(2, map.get("end").toString());
 			
 			rs= psmt.executeQuery();
-			if (rs.next())
+			while (rs.next())
 			{
 				BoardDTO dto= new BoardDTO();
 				
