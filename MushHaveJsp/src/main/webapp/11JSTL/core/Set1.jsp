@@ -39,5 +39,39 @@
 		<li>나이: ${ requestScope.personVar2.age }</li>
 	</ul>
 	
+	<h4>연습문제 : if 태그</h4>
+	<!--  
+    	아이디, 패스워드를 입력후 submit버튼을 누르면 EL식을 통해 파라미터를
+    	받은 후 musthave/1234인 경우에는 'musthave님, 반갑습니다~'이라고 출력한다.
+    	만약 틀렸다면 "아이디/비번을 확인하세요"라고 출력한다.
+    	EL과 JSTL의 if태그만을 이용해서 구현하시오.
+     -->
+     <form method="get">
+	     <label for= "user">아이디: </label>
+	     <input type="text" id= "user" name= "user"/>
+	     
+	     <br/>
+	     
+	     <label for= "pwd">비밀번호: </label>
+	     <input type="password" id= "pwd" name= "pwd"/>
+	     
+	     <button type= "submit">로그인</button>
+     </form>
+     
+     <c:if test= "${ not empty param.user }">
+     	전송된 아이디: ${ param.user }<br/>
+     	전송된 패스워드: ${ param.pwd }<br/>
+     </c:if>
+     <c:if test= "${param.user eq 'musthave' and param.pwd eq '1234'}" var= "loginResult">
+     	로그인 완료
+     </c:if>
+     <c:if test= "${ not loginResult }">
+     	로그인 실패
+     </c:if>
+     
+     
+     
+	
+	
 </body>
 </html>

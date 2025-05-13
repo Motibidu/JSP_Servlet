@@ -1,0 +1,16 @@
+<%@page import="java.util.Date"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="jakarta.tags.core"%>
+<%@ taglib prefix="fmt" uri="jakarta.tags.fmt"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>JSTL- fmt3</title>
+</head>
+<body>
+	<h4>로케일 설정</h4>
+	<c:set var= "today" value= "<%= new Date(); %>"
+</body>
+</html>
