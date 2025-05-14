@@ -1,0 +1,11 @@
+package fileupload;
+
+import jakarta.servlet.http.HttpServletRequest;
+
+public class FileUtil
+{
+	public static String uploadFile(HttpServletRequest req, String sDirectory) throws ServletException, IOException
+	{
+
+	}
+}

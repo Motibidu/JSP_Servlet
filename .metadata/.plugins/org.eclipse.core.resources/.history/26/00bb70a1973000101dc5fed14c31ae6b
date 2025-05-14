@@ -1,0 +1,11 @@
+package fileupload;
+
+import jakarta.servlet.annotation.WebServlet;
+
+@WebServlet("/13FileUpload/UploadProcess.do")
+@MultipartConfig()
+
+public class UploadProcess
+{
+
+}

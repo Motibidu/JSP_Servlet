@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move &apos;AnnoMapping.jsp&apos; to &apos;12Servlet&apos;" description="Move &apos;AnnoMapping.jsp&apos; to &apos;12Servlet&apos;" destination="src/main/webapp/12Servlet" element1="src/main/webapp/AnnoMapping.jsp" flags="7" id="org.eclipse.ltk.core.refactoring.move.resources" resources="1" stamp="1747187341218" updateReferences="true"/>
+</session>

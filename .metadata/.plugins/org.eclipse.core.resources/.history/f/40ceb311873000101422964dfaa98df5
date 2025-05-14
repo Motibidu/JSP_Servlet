@@ -1,0 +1,24 @@
+package servlet;
+
+import jakarta.servlet.ServletContext;
+import jakarta.servlet.ServletException;
+import jakarta.servlet.http.HttpServlet;
+import membership.MemberDAO;
+
+public class MemberAuth extends HttpServlet
+{
+	MemberDAO dao;
+	
+	@Override
+	public void init() throws ServletException
+	{
+		ServletContext applicationContext= this.getServletContext();
+		
+		String driverString= applicationContext.getInitParameter("OracleDriver");
+		String connectUrl= applicationContext.getInitParameter("OracleURL");
+		String oId= applicationContext.getInitParameter("OracleId");
+		String oPass= applicationContext.getInitParameter("OraclePwd");
+		
+	}
+
+}

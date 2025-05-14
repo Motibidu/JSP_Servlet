@@ -1,0 +1,35 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>FileUpload</title>
+<script>
+	function validateForm(form) {
+		if (form.title.value == "") {
+			alert("제목을 입력하세요.");
+			form.title.focus();
+			return false;
+		}
+		if (from.attahcedFile.value == "") {
+			alert("첨부파일은 필수 입력입니다.");
+			return false;
+		}
+	}
+</script>
+</head>
+<body>
+	<h3>파일 업로드</h3>
+	<span style="color: red;">${ errorMessage }</span>
+	<form name="fileForm" method="post" enctype="multipart/form-data" 
+			action="UploadProcess.do" onsubmit="return validateForm(this);">
+			<label for="title">제목: </label><input type= "text" id= "title" name= "title"/>
+			<br/>
+			<label for= "category">카테고리(선택사항): </label><br/>
+			<input type= "checkbox" id= "photo" name= "category" value="사진" checked/><label for="photo">사진</label>
+			<input type= "checkbox" id= "category" name= "category" value="과제" checked/><label for="title">과제</label>
+			<input type= "checkbox" id= "category" name= "category" value="워드" checked/><label for="title">워드</label>
+			<input type= "checkbox" id= "category" name= "category" value="음원" checked/><label for="title">음원</label>
+	</form>
+</body>
+</html>
