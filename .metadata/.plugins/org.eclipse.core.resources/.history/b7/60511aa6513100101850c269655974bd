@@ -1,0 +1,11 @@
+package model2.mvcboard;
+
+public class WriteController
+{
+
+	public WriteController()
+	{
+		// TODO Auto-generated constructor stub
+	}
+
+}

@@ -1,0 +1,11 @@
+package model2.mvcboard;
+
+public class ListController extends HttpServlet
+{
+
+	public ListController() 
+	{
+		// TODO Auto-generated constructor stub
+	}
+
+}

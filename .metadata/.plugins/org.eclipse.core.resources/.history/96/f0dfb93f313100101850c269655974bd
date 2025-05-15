@@ -1,0 +1,6 @@
+package fileupload;
+
+public class MultipleProcess extends UploadProcess
+{
+
+}

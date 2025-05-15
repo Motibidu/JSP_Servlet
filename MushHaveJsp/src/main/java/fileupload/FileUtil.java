@@ -3,6 +3,8 @@ package fileupload;
 import java.io.File;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Collection;
 import java.util.Date;
 
 import jakarta.servlet.ServletException;
@@ -40,5 +42,28 @@ public class FileUtil
 		oldFile.renameTo(newFile);
 		
 		return newFileName;
+	}
+	
+	public static ArrayList<String> multipleFile(HttpServletRequest req, String sDirectory) throws ServletException, IOException
+	{
+		ArrayList<String> listFileName= new ArrayList<String>();
+		Collection<Part> parts= req.getParts();
+		
+		for(Part part: parts)
+		{
+			if (!part.getName().equals("ofile")) continue;
+			
+			String partHeader= part.getHeader("content-disposition");
+			String[] phArr= partHeader.split("filename=");
+			String originalFileName = phArr[1].trim().replace("\"", "");
+			
+			if(!originalFileName.isEmpty())
+			{
+				part.write(sDirectory+ File.separator+ originalFileName);
+			}
+			listFileName.add(originalFileName);
+		}
+		
+		return listFileName;
 	}
 }

@@ -4,7 +4,7 @@
 <head>
 <meta charset="UTF-8">
 <title>FileUpload</title>
-
+<!-- C:\DevData\JSPServlet\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\MushHaveJsp\Uploads -->
 </head>
 <body>
 	<h3>파일 업로드</h3>
@@ -14,10 +14,10 @@
 			<label for="title">제목: </label><input type= "text" id= "title" name= "title"/>
 			<br/>
 			<p>카테고리(선택사항): </p>
-			<input type= "checkbox" id= "photo" name= "category" value="사진" checked/><label for="photo">사진</label>
-			<input type= "checkbox" id= "task" name= "category" value="과제"/><label for="task">과제</label>
-			<input type= "checkbox" id= "word" name= "category" value="워드"/><label for="word">워드</label>
-			<input type= "checkbox" id= "music" name= "category" value="음원"/><label for="music">음원</label>
+			<input type= "checkbox" id= "photo" name= "cate" value="사진" checked/><label for="photo">사진</label>
+			<input type= "checkbox" id= "task" name= "cate" value="과제"/><label for="task">과제</label>
+			<input type= "checkbox" id= "word" name= "cate" value="워드"/><label for="word">워드</label>
+			<input type= "checkbox" id= "music" name= "cate" value="음원"/><label for="music">음원</label>
 			첨부파일: <input type= "file" name= "ofile"/><br/>
 			<input type= "submit" value="전송하기"/>
 	</form>

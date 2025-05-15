@@ -1,0 +1,78 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>FileUpload</title>
+<!-- C:\DevData\JSPServlet\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\MushHaveJsp\Uploads -->
+</head>
+<body>
+	<h3>파일 업로드</h3>
+	<span style="color: red;">${ errorMessage }</span>
+	<form id="fileUploadForm" name="fileForm" method="post" enctype="multipart/form-data" 
+			action="MultipleProcess.do" onsubmit="return validateForm(this)">
+			<label for="title">제목: </label><input type= "text" id= "title" name= "title"/>
+			<br/>
+			<p>카테고리(선택사항): </p>
+			<input type= "checkbox" id= "photo" name= "cate" value="사진" checked/><label for="photo">사진</label>
+			<input type= "checkbox" id= "task" name= "cate" value="과제"/><label for="task">과제</label>
+			<input type= "checkbox" id= "word" name= "cate" value="워드"/><label for="word">워드</label>
+			<input type= "checkbox" id= "music" name= "cate" value="음원"/><label for="music">음원</label>
+			첨부파일: <input type= "file" name= "ofile"/><br/>
+			<input type= "submit" value="전송하기"/>
+	</form>
+	
+	<!-- <form id="fileUploadForm" method="post" enctype="multipart/form-data" action="UploadProcess.do">
+    <div>
+        <label for="title">제목:</label>
+        <input type="text" id="title" name="title" required /> </div>
+
+    <fieldset> 
+    	<legend>카테고리 (선택사항):</legend>
+    	
+    	<input type="checkbox" id="photo" name="category" value="사진" />
+        <label for="photo">사진</label>
+
+        <input type="checkbox" id="task" name="category" value="과제" />
+        <label for="task">과제</label>
+
+        <input type="checkbox" id="word" name="category" value="워드" />
+        <label for="word">워드</label>
+
+        <input type="checkbox" id="music" name="category" value="음원" />
+        <label for="music">음원</label>
+    </fieldset>
+
+    <div>
+        <label for="uploadFile">파일 선택:</label> <input type="file" id="uploadFile" name="uploadFile" required /> </div>
+
+    <div>
+        <button type="submit">업로드</button> </div> 
+</form> -->
+	<script>
+		function validateForm(form) {
+			if (form.title.value == "") {
+				alert("제목을 입력하세요.");
+				form.title.focus();
+				return false;
+			}
+			if (form.attahcedFile.value == "") {
+				alert("첨부파일은 필수 입력입니다.");
+				return false;
+			}
+		}
+		/* document.getElementById('fileUploadForm').addEventListener('submit', function(event) {
+			if (this.title.value === "") {
+				alert("제목을 입력하세요.");
+				form.title.focus();
+				return false;
+			}
+			if (this.attahcedFile.value === "") {
+				alert("첨부파일은 필수 입력입니다.");
+				return false;
+			}
+		}); */
+		
+	</script>
+</body>
+</html>

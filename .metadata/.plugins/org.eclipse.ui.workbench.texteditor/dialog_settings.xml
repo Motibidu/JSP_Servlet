@@ -5,6 +5,12 @@
 		<item key="selection" value="document.getElementById(&apos;fileUploadForm&apos;).addEventListener(&apos;submit&apos;, function(event) {"/>
 		<item key="replaceBarOpen" value="false"/>
 		<list key="findhistory">
+			<item value="visitCount"/>
+			<item value="boardlists"/>
+			<item value="boardlist"/>
+			<item value="bbs"/>
+			<item value="_"/>
+			<item value="%&gt;&quot;"/>
 			<item value="document.getElementById(&apos;fileUploadForm&apos;).addEventListener(&apos;submit&apos;, function(event) {"/>
 			<item value="수정에 실패"/>
 			<item value="수정하기"/>

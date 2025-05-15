@@ -1,0 +1,13 @@
+package model2.mvcboard;
+
+import jakarta.servlet.http.HttpServlet;
+
+public class ListController extends HttpServlet
+{
+
+	public ListController() 
+	{
+		// TODO Auto-generated constructor stub
+	}
+
+}

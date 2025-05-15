@@ -1,0 +1,38 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script>
+	function validateForm(form) {
+		if (form.name.value == "") 
+		{
+			alert("작성자를 입력하세요.");
+			form.name.focus();
+			false;
+		}
+		if (form.title.value == "") 
+		{
+			alert("작성자를 입력하세요.");
+			form.name.focus();
+			false;
+		}
+		if (form.content.value == "") 
+		{
+			alert("작성자를 입력하세요.");
+			form.name.focus();
+			false;
+		}
+		if (form.pass.value == "") 
+		{
+			alert("작성자를 입력하세요.");
+			form.name.focus();
+			false;
+		}
+	}
+</script>
+</head>
+<body>
+
+</body>
+</html>
